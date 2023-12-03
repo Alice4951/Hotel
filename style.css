@@ -1,3 +1,17 @@
-h1 {
+header {
     text-align: center;
+    position: relative;
+    font-size: 40px;
+}
+
+.video-lotus {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+}
+
+.mentions {
+    position: relative;
+    text-align: end;
 }
