@@ -1,0 +1,9 @@
+<?php 
+    print($_POST['type']);
+    print($_POST['chambre']);
+    print($_POST['suite']);
+    print($_POST['Baignoire']);
+    print($_POST['MiniBar']);
+    print($_POST['Balcon']);
+    print($_POST['Tele']);
+?>
