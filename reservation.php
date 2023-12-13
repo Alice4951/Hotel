@@ -13,9 +13,8 @@
             Téléphone <input type="text" name="Téléphone"/><br>
             Email <input type="text" name="Email"/><br>
             Nombre de personne <input type="number" name="Nombre de personne"/><br>
-            Chambre <input type="checkbox" name="Chambre"/> Suite <input type="checkbox" name="Suite"><br>
-            Nombre de chambre <input type="number" name="Nombre de chambre"/> Nombre de suite <input type="number" name="Nombre de suite"/><br>
-            Type de chambre: Simple <input type="checkbox" name="Simple"/> Double <input type="checkbox" name="Double"> Suite <input type="checkbox" name="Suite"><br>
+            Chambre <input type="radio" name="Type"/> Suite <input type="radio" name="Type"><br>
+            Type de chambre: Simple <input type="radio" name="Chambre"/> Double <input type="radio" name="Chambre"><br>
             Options:<br>
             Baignoire <input type="checkbox" name="Baignoire"/> Balcon <input type="checkbox" name="Balcon"><br>
             Mini bar <input type="checkbox" name="Mini bar"/> Télévision <input type="checkbox" name="Télévision"><br>
