@@ -5,4 +5,3 @@ create table article
     Séjour varchar(256),
     Prix varchar(64)
 );
-insert into article(Chambre,Séjour,Prix) values('Chambre seule', '1 semaine', '1550€');

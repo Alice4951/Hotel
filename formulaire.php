@@ -7,7 +7,7 @@
 
     <body>
         <h1>Exemple de service</h1>
-        <form method="post" action="">
+        <form method="post" action="insert.php">
             Chambre <input type="radio" name="type" /><br> Prix: <ins>300€ pour une chambre</ins><br>
             Suite <input type="radio" name="type" /><br> Prix: <ins>2 personne: 400€, 3 personnes: 500€</ins><br>
             Nombre de chambre <input type="number" name="Nombre de chambre"/><br> Nombre de suite <input type="number" name="Nombre de suite"/><br>
