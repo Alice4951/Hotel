@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="fr-FR">
     <head>
         <title> Formulaire d'Insertion </title>
         <link rel="stylesheet" href="style1.css">

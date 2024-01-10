@@ -1,6 +1,6 @@
-<!DOCTYPE html
+<!DOCTYPE html>
 
-<html>
+<html lang="fr-FR">
 
 <head>
     <title> Mentions légales de Onyx Raven Hotel</title>

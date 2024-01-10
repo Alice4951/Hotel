@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="fr-FR">
 
 <head> 
     <title> Nelumbo Hotel</title>
