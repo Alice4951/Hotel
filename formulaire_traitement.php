@@ -6,4 +6,5 @@
     print($_POST['MiniBar']);
     print($_POST['Balcon']);
     print($_POST['Tele']);
+    print($_POST['vue']);
 ?>
