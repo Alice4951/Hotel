@@ -5,7 +5,7 @@
 
     if (isset($_POST['chambre']) || isset($_POST['suite']))
     {
-      $chaine = "insert into idea (chambre, suite) values('" . $_POST['chambre'] . "', '" . $_POST['suite'] . "')";
+      $chaine = "insert into hotel (chambre, suite) values('" . $_POST['chambre'] . "', '" . $_POST['suite'] . "')";
       $requete = $connexion->prepare($chaine);
       $resultat = $requete->execute();
     }
