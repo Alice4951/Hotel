@@ -1,10 +1,6 @@
 <?php 
-    print($_POST['type']);
-    print($_POST['chambre']);
-    print($_POST['suite']);
-    print($_POST['Baignoire']);
-    print($_POST['MiniBar']);
-    print($_POST['Balcon']);
-    print($_POST['Tele']);
-    print($_POST['vue']);
+    print($_POST['Catégorie']);
+    print($_POST['Chamb']);
+    print($_POST['Suit']);
+    print($_POST['Options']);
 ?>
