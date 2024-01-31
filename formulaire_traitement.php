@@ -1,6 +1,9 @@
 <?php 
     print($_POST['Catégorie']);
-    print($_POST['Chamb']);
-    print($_POST['Suit']);
-    print($_POST['Options']);
+    print($_POST['Pers']);
+    print($_POST['MiniBar']);
+    print($_POST['Télévision']);
+    print($_POST['Baignoire']);
+    print($_POST['Vue']);
+    print($_POST['Balcon']);
 ?>
