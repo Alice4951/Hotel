@@ -1,6 +1,6 @@
 <?php 
     print($_POST['Catégorie']);
-    print($_POST['Pers']);
+    print($_POST['Type']);
 
     if (isset($_POST['MiniBar']))
     {
