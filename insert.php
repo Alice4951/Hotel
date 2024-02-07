@@ -4,7 +4,7 @@
 
     if (isset($_POST['Catégorie']) && isset($_POST['Type']))
     {
-      $chaine = "insert into reservation (Catégorie, Type, Options, Prix) values('" . $_POST['Chambre'] . "','" . $_POST['Suite'] . "', '" . $_POST['Simple'] . "', '" . $_POST['Double'] . "', '" . $_POST['2 personnes'] . "','" . $_POST['3 personnes'] . "', '" . $_POST['Baignoire'] . "', '" . $_POST['MiniBar'] . "', '" . $_POST['Balcon'] . "','" . $_POST['Télévision'] . "', '" . $_POST['Vue'] . "')";
+      $chaine = "insert into reservation (Catégorie, Type, Options, Prix) values('" . $_POST['Catégorie'] . "','" . $_POST['Type'] . "', '" . $_POST['Options'] . "', '" . $_POST['¨Prix'] . "')";
       $requete = $connexion->prepare($chaine);
       $resultat = $requete->execute();
     }
