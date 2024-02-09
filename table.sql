@@ -1,4 +1,4 @@
-create table reservation
+create table article
 (
     id integer primary key auto_increment,
     Catégorie varchar(64),
@@ -7,4 +7,4 @@ create table reservation
     Prix varchar(64)
 );
 
-insert into reservation(Catégorie, Type, Options, Prix) values('Chambre', 'Double', 'Baignoire, Mini Bar, Télévision', '375€');
+insert into article(Catégorie, Type, Options, Prix) values('Chambre', 'Double', 'Baignoire, Mini Bar, Télévision', '850€');
