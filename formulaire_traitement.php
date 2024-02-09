@@ -22,4 +22,6 @@
     {
         print($_POST['Balcon']);
     }
+    
+    print($_POST['Prix']);
 ?>

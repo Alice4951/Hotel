@@ -10,22 +10,23 @@
         <link rel="stylesheet" href="style.css">
     </head>
 
+    <?php
+        require('credentials.php');
+        $connexion = new PDO("mysql:host=$host;dbname=$dbname;charset=$charset", $user, $password);
+    ?>
+    
     <body>
         <h1>Formulaire</h1>
-        <form method="post" action="formulaire_traitement.php">
+        <form method="post" action="insert.php">
             Chambre <input type="radio" name="Catégorie" value="Chambre">
             Suite <input type="radio" name="Catégorie" value="Suite"><br>
             Type de chambre: <input type="radio" name="Type" value="Simple"> Simple  <input type="radio" name="Type" value="Double"> Double <br>
             Nombre de personnes dans la suite: <input type="radio" name="Type" value="2 personnes"> 2 personnes <input type="radio" name="Type" value="4 personnes"> 4 personnes <input type="radio" name="Type" value="6 personnes"> 6 personnes<br>
-            
-            <ins>Prix</ins><br>
-            Chambre simple: 950€ / double: 1050€<br>
-            Suite 2 pers: 2300€ / 4 pers: 3500€ / 6 pers: 4800€<br>
-
             Options:<br>
-            Baignoire(+20€) <input type="checkbox" name="Baignoire" value="Baignoire"> Balcon <input type="checkbox" name="Balcon" value="Balcon"><br>
+            Baignoire <input type="checkbox" name="Baignoire" value="Baignoire"> Balcon <input type="checkbox" name="Balcon" value="Balcon"><br>
             Mini bar <input type="checkbox" name="MiniBar" value="MiniBar"> Télévision <input type="checkbox" name="Télévision" value="Télévision"><br>
-            Avec vue <input type="checkbox" name="Vue" value="Vue"> <br>
+            Avec vue <input type="checkbox" name="Vue" value="Vue"><br>
+            Prix: <input type="number" name="Prix" value="Prix"><br>
             <input type="submit" value="Réserver">
         </form>
     </body>
