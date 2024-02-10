@@ -17,7 +17,7 @@
     
     <body>
         <h1>Formulaire</h1>
-        <form method="post" action="insert.php">
+        <form method="post" action="formulaire_traitement.php">
             Chambre <input type="radio" name="Catégorie" value="Chambre">
             Suite <input type="radio" name="Catégorie" value="Suite"><br>
             Type de chambre: <input type="radio" name="Type" value="Simple"> Simple  <input type="radio" name="Type" value="Double"> Double <br>
