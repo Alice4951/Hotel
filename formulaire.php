@@ -18,11 +18,11 @@
             Type de chambre: <input type="radio" name="Type" value="Simple"> Simple  <input type="radio" name="Type" value="Double"> Double <br>
             Nombre de personnes dans la suite: <input type="radio" name="Type" value="2 personnes"> 2 personnes <input type="radio" name="Type" value="4 personnes"> 4 personnes <input type="radio" name="Type" value="6 personnes"> 6 personnes<br>
             Options:<br>
-            Baignoire <input type="checkbox" name="Options" value="Baignoire"> Balcon <input type="checkbox" name="Options" value="Balcon"><br>
-            Mini bar <input type="checkbox" name="Options" value="MiniBar"> Télévision <input type="checkbox" name="Options" value="Télévision"><br>
-            Avec vue <input type="checkbox" name="Options" value="Vue"><br>
-            Prix: <input type="number" name="Prix" value="Prix"><br>
-            <input type="submit" value="Réserver">
+            Baignoire <input type="checkbox" name="Baignoire" value="Baignoire"> Balcon <input type="checkbox" name="Balcon" value="Balcon"><br>
+            Mini bar <input type="checkbox" name="MiniBar" value="MiniBar"> Télévision <input type="checkbox" name="Télévision" value="Télévision"><br>
+            Avec vue <input type="checkbox" name="Vue" value="Vue"><br>
+            Prix: <input type="number" name="Prix" value="Prix">€<br>
+            <input type="submit" value="Ajouter">
         </form>
     </body>
 </html>

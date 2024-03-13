@@ -49,7 +49,11 @@
                     Options :
                 </td>
                 <td>
-                    <?php print($idee["Options"]) ?>
+                    <?php print($idee["Baignoire"]);
+                        print($idee["Balcon"]);
+                        print($idee["MiniBar"]);
+                        print($idee["Télévision"]);
+                        print($idee["Vue"]) ?>
                 </td>
             </tr>
             <tr>
