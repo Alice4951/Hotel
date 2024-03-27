@@ -20,3 +20,4 @@ create table category
   );
 
 insert into category (Nom) values ('Chambre');
+insert into category(Nom) values ('Suite');
