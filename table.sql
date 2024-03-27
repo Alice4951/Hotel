@@ -12,3 +12,11 @@ create table article
 );
 
 insert into article(Catégorie, Type, Baignoire, Balcon, MiniBar, Télévision, Vue, Prix) values('Chambre', 'Double', 'Baignoire', ' ', 'MiniBar', 'Télévision', ' ', '850€');
+
+  create table category
+  (
+      id integer primary key auto_increment,
+      nom varchar(64)
+  );
+
+insert into category('chambre')
