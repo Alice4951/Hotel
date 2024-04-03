@@ -1,12 +1,18 @@
 <?php
-    require('credentials.php');
+    /*
+     * Connexion à la base de données
+     */
+    require('../credentials.php');
     $connexion = new PDO("mysql:host=$host;dbname=$dbname;charset=$charset", $user, $password);
-
-    if (isset($_POST['Catégorie']) && isset($_POST['Type']) && isset ($_POST['Options']) && isset ($_POST['Prix']))
+    /*
+     * Insertion
+     */
+    if (isset($_POST['nom']))
     {
-      $chaine = "insert into article (Catégorie, Type, Options, Prix) values('" . $_POST['Catégorie'] . "','" . $_POST['Type'] . "','" . $_POST['Options'] . "','" . $_POST['Prix'] . "')";
+      $chaine = "insert into category (nom) values('" . $_POST['nom'] . "')";
       $requete = $connexion->prepare($chaine);
       $resultat = $requete->execute();
+      var_dump($resultat);
     }
     header("Location:.");
 ?>
