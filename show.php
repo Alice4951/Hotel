@@ -1,7 +1,7 @@
 <?php
     if (!isset($_GET['id']) || !is_numeric($_GET['id']))
         header("Location:.");
-    
+
     require('credentials.php');
     $connexion = new PDO("mysql:host=$host;dbname=$dbname;charset=$charset", $user, $password);
 
@@ -12,6 +12,10 @@
 
     if (!$idee)
         header("Location:.");
+        $chaine = 'select * from category where id = ' . $idee["category_id"];
+   $requete = $connexion->prepare($chaine);
+   $requete->execute();
+   $categorie = $requete->fetch();
 ?>
 
 <!DOCTYPE html>
@@ -33,7 +37,7 @@
                     Catégorie :
                 </td>
                 <td>
-                    <?php print($idee["Catégorie"]) ?>
+                  <?php print($categorie["Nom"]) ?>
                 </td>
             </tr>
             <tr>
