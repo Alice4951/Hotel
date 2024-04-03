@@ -7,7 +7,7 @@
     </head>
     <body>
     <?php
-        
+
         require('../credentials.php');
         $connexion = new PDO("mysql:host=$host;dbname=$dbname;charset=$charset", $user, $password);
 
@@ -24,7 +24,7 @@
                     </th>
                 </tr>
                 <?php
-                    
+
                     foreach ($categories as $categorie)
                     {
                         ?>
@@ -32,6 +32,11 @@
                             <td>
                                 <?php print($categorie['Nom']) ?>
                             </td>
+                            <td>
+                                <a href="delete.php?id=<?php print($categorie['id'])?>">
+                                    Supprimer
+                                </a>
+                              </td>
                         </tr>
                 <?php
                         }
