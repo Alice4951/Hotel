@@ -24,7 +24,7 @@
     </head>
     <body>
         <form method="post" action="update.php?id=<?php print($_GET["id"]) ?>">
-            <input name="nom" value="<?php print($category['Nom']) ?>">
+            <input name="Nom" value="<?php print($category['Nom']) ?>">
             <br>
             <input type="submit" value="Modifier la catégorie">
         </form>
