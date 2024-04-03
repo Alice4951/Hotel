@@ -33,6 +33,11 @@
                                 <?php print($categorie['Nom']) ?>
                             </td>
                             <td>
+                                <a href="edit.php?id=<?php print($categorie['id'])?>">
+                                    Modifier
+                                </a>
+                            </td>
+                            <td>
                                 <a href="delete.php?id=<?php print($categorie['id'])?>">
                                     Supprimer
                                 </a>
@@ -48,6 +53,6 @@
             print('Aucune catégorie à afficher');
    ?>
     <hr>
-    <a href=".../categories/create.html">Ajouter</a>
+    <a href="create.html">Ajouter</a>
     </body>
 </html>

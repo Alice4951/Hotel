@@ -7,9 +7,9 @@
     /*
      * Insertion
      */
-    if (isset($_POST['nom']))
+    if (isset($_POST['Nom']))
     {
-      $chaine = "insert into category (nom) values('" . $_POST['nom'] . "')";
+      $chaine = "insert into category (Nom) values('" . $_POST['Nom'] . "')";
       $requete = $connexion->prepare($chaine);
       $resultat = $requete->execute();
       var_dump($resultat);
