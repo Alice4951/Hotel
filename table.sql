@@ -8,10 +8,11 @@ create table article
     MiniBar varchar(64),
     Télévision varchar(64),
     Vue varchar(64),
-    Prix varchar(64)
+    Prix varchar(64),
+    category_id integer
 );
 
-insert into article(Catégorie, Type, Baignoire, Balcon, MiniBar, Télévision, Vue, Prix) values('Chambre', 'Double', 'Baignoire', ' ', 'MiniBar', 'Télévision', ' ', '850€');
+insert into article(Catégorie, Type, Baignoire, Balcon, MiniBar, Télévision, Vue, Prix, category_id) values('Chambre', 'Double', 'Baignoire', ' ', 'MiniBar', 'Télévision', ' ', '850€','1');
 
 create table category
   (
