@@ -7,5 +7,4 @@
     print($_POST['Télévision']);
     print($_POST['Vue']);
     print($_POST['Prix']);
-    print($_POST['Nom']);
 ?>
