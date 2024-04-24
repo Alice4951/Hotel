@@ -13,8 +13,7 @@
     <body>
         <h1>Formulaire</h1>
         <form method="post" action="insert.php">
-            Chambre <input type="radio" name="Catégorie" value="Chambre">
-            Suite <input type="radio" name="Catégorie" value="Suite"><br>
+            Numéro <input name="Numéro"><br>
             Type de chambre: <input type="radio" name="Type" value="Simple"> Simple  <input type="radio" name="Type" value="Double"> Double <br>
             Nombre de personnes dans la suite: <input type="radio" name="Type" value="2 personnes"> 2 personnes <input type="radio" name="Type" value="4 personnes"> 4 personnes <input type="radio" name="Type" value="6 personnes"> 6 personnes<br>
             Options:<br>

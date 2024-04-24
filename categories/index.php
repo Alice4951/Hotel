@@ -16,6 +16,8 @@
         $categories = $requete->fetchAll();
         if (count($categories) > 0)
         {
+        
+            
         ?>
         <table>
                 <tr>

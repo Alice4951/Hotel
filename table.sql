@@ -1,7 +1,7 @@
 create table article
 (
     id integer primary key auto_increment,
-    Catégorie varchar(64),
+    Numéro varchar(64),
     Type varchar(64),
     Baignoire varchar(64),
     Balcon varchar(64),
@@ -12,7 +12,7 @@ create table article
     category_id integer
 );
 
-insert into article(Catégorie, Type, Baignoire, Balcon, MiniBar, Télévision, Vue, Prix, category_id) values('Chambre', 'Double', 'Baignoire', ' ', 'MiniBar', 'Télévision', ' ', '850€','1');
+insert into article(Numéro, Type, Baignoire, Balcon, MiniBar, Télévision, Vue, Prix, category_id) values('F15', 'Double', 'Baignoire', ' ', 'MiniBar', 'Télévision', ' ', '850€','1');
 
 create table category
   (

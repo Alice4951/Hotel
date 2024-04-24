@@ -1,5 +1,5 @@
 <?php 
-    print($_POST['Catégorie']);
+    print($_POST['Numéro']);
     print($_POST['Type']);
     print($_POST['Baignoire']);
     print($_POST['Balcon']);

@@ -12,6 +12,11 @@
 
     if (!$idee)
         header("Location:.");
+
+    $chaine = 'select * from category where id = ' . $idee["category_id"];
+    $requete = $connexion->prepare($chaine);
+    $requete->execute();
+    $categorie = $requete->fetch();
 ?>
 
 <!DOCTYPE html>
@@ -33,7 +38,15 @@
                     Catégorie :
                 </td>
                 <td>
-                    <?php print($idee["Catégorie"]) ?>
+                    <?php print($categorie["Nom"]) ?>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Numéro :
+                </td>
+                <td>
+                    <?php print($idee["Numéro"]) ?>
                 </td>
             </tr>
             <tr>
