@@ -26,11 +26,16 @@
             $requete = $connexion->prepare('select * from article');
             $requete->execute();
             $idees = $requete->fetchAll();
-        ?>
+
+            $requete = $connexion->prepare('select * from category');
+            $requete->execute();
+            $categories = $requete->fetchAll(\PDO::FETCH_GROUP|\PDO::FETCH_UNIQUE|\PDO::FETCH_ASSOC);
+    ?>
+
     <table>
             <tr>
                 <th>
-                    Catégorie
+                    Numéro
                 </th>
                 <th>
                     Type
@@ -41,7 +46,11 @@
                 <th>
                     Prix
                 </th>
+                <th>
+                    Catégorie
+                </th>
             </tr>
+
             <?php
                 
                 foreach ($idees as $idee)
@@ -51,7 +60,7 @@
                     <tr>
                         <td>
                             <a href="<?php print($url) ?>">
-                                <?php print($idee['Catégorie']) ?>
+                                <?php print($idee['Numéro']) ?>
                             </a>
                         </td>
                         <td>
@@ -67,14 +76,39 @@
                         <td>
                             <?php print($idee['Prix']) ?>
                         </td>
+                        <td>
+                            <?php
+                                $categorie_id = $idee['category_id'];
+                                $categorie = $categories[$categorie_id];
+                                $nom = $categorie["Nom"];
+                                print($nom)
+                            ?>
+                        </td>
                     </tr>
                     <?php
                 }
             ?>
+
         </table>
         <form method="post" action="insert.php">
 
-            <p>Catégorie <input name="Catégorie"></p>
+            <?php
+                if (count($categories) > 0)
+                {
+            ?>
+                <form method="post" action="insert.php">
+                    <select name="category_id">
+                    <?php
+                        foreach($categories as $id => $categorie)
+                            print('<option value="' . $id . '">' . $categorie['Nom'] . '</option>');
+                    ?>
+                </select>
+                <br>
+                <?php
+                }
+            ?>
+
+            <p>Numéro <input name="Numéro"></p>
 
             <p>Type:</p>
             Si chambre: Simple <input type="radio" name="Type" value="Simple"> Double <input type="radio" name="Type" value="Double"><br>
@@ -89,7 +123,6 @@
             <input type="submit" value="Ajouter l'article">
         </form>
     </body>
-</html>
 
 <div class="mentions">
     <a href="mentions_legales.html"> Accéder aux mentions légales</a>
