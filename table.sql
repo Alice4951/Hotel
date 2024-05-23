@@ -17,8 +17,10 @@ insert into article(Numéro, Type, Baignoire, Balcon, MiniBar, Télévision, Vue
 create table category
   (
       id integer primary key auto_increment,
-      Nom varchar(64)
+      Nom varchar(64),
+      category_id integer NOT NULL,
+      foreign key (category_id) references category(id)
   );
 
-insert into category (Nom) values ('Chambre');
-insert into category (Nom) values ('Suite');
+insert into category (Nom, category_id) values ('Chambre', '1');
+insert into category (Nom, category_id) values ('Suite', '2');
