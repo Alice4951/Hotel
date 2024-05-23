@@ -104,8 +104,10 @@
                     ?>
                 </select>
                 <br>
-                <?php
+            <?php
                 }
+                else
+                print("Veuillez d'abord créer une catégorie");
             ?>
 
             <p>Numéro <input name="Numéro"></p>
