@@ -1,3 +1,12 @@
+create table category
+  (
+      id integer primary key auto_increment,
+      Nom varchar(64) NOT NULL
+  );
+
+insert into category (Nom) values ('Chambre');
+insert into category (Nom) values ('Suite');
+
 create table article
 (
     id integer primary key auto_increment,
@@ -9,18 +18,8 @@ create table article
     Télévision varchar(64),
     Vue varchar(64),
     Prix varchar(64),
-    category_id integer
+    category_id integer NOT NULL,
+    foreign key (category_id) references category(id)
 );
 
 insert into article(Numéro, Type, Baignoire, Balcon, MiniBar, Télévision, Vue, Prix, category_id) values('F15', 'Double', 'Baignoire', ' ', 'MiniBar', 'Télévision', ' ', '850€','1');
-
-create table category
-  (
-      id integer primary key auto_increment,
-      Nom varchar(64),
-      category_id integer NOT NULL,
-      foreign key (category_id) references category(id)
-  );
-
-insert into category (Nom, category_id) values ('Chambre', '1');
-insert into category (Nom, category_id) values ('Suite', '2');
